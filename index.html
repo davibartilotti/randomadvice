@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="C:\Users\Acer\Desktop\Code\conselhos-api\style.css">
+    <title>Random Advice</title>
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>Random Advice!</h1>
+        <h2>Click on "Get Advice" to read a random advice</h2>
+    </div>
+
+    <div class="container">
+        <div id="resultado"></div>
+        <div class="button">
+            <button id ="obterConselho" class="btn" onclick="obterConselho()" >Get Advice</button>
+        </div>
+    </div>
+
+    <button id="abrirBotao" class="info-button"></button>
+  
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <h2>Português</h2>
+      <p><strong>Para traduzir, clique com o botão direito do mouse na tela e selecione "Traduzir para o português".</strong></p>
+      <button id="fecharBotao">X</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

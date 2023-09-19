@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(45deg, #290033, #5e0075);
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 22px;
+    margin: 1%; 
+    color: rgb(255, 255, 255);
+}
+
+.titulo h2 {
+    font-size: 16px;
+    margin: 1%;
+    color: #ddd1ff;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    padding: auto;
+    background-image: linear-gradient(45deg, #5e0075, #290033);
+    width: 80vh;
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+
+    .container {
+      width: 90%;
+      height: 40vh; 
+    }
+  }
+
+
+
+
+.btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+.btn::before {
+  position: absolute;
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.estilo-resultado {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+  }
+
+
+
+.info-button{
+    display: block;
+    margin: auto;
+    padding: auto;
+    margin-top: 1%;
+    justify-content: center;
+    background-image: url('assets/brasil-img.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    left: 40%;
+}
+
+
+    
+
+.popup {
+    background-image: url('assets/brasil-img.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.popup h2 {
+    text-align: center;
+    color: rgb(133, 133, 133);
+}
+
+.popup p {
+    text-align: center;
+    margin: 2%;
+    font-size: 3vh;
+    color: rgb(104, 104, 104);
+}
+
+.popup button {
+    position: absolute;
+    margin-top: 20%;
+    left: 42%;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 15%;
+    height: 30%;
+    border-radius: 100%;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
